@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+</head>
+<body>
+
+<h2>One Stop Saviour</h2>
+<p>This page has collection of all important links and reference to the content normally most useful or frequently used by Quality team, Developers, Management. </p>
+<button class="accordion">Release process checklist</button>
+<div class="panel">
+  <p>This section has the checklist of all the must items for any release to happen successfully.</p>
+</div>
+<button class="accordion">Microsoft Teams</button>
+<div class="panel">
+  <p>This section gives all the locations of important files uploaded on Teams</p>
+  <table id="t01">
+  <tr>
+    <th>Purpose</th>
+    <th>URL</th> 
+  </tr>
+  <tr>
+    <td>TSAC Release wise breakdown of stories</td>
+    <td><a href ="https://teams.microsoft.com/_#/files/General?threadId=19%3A9bac8b44c2b64f53a94a8460360d4447%40thread.skype&ctx=channel&context=Release%2520Planning&rootfolder=%252Fsites%252FTSVMTSSPIndiaTeam%252FShared%2520Documents%252FGeneral%252FTSAC%252FRelease%2520Planning">TSAC Release Story Breakdown</a></td>
+  </tr>
+  <tr>
+    <td>TSAC release wise Qplan documents</td>
+    <td><a href="https://teams.microsoft.com/_#/files/General?threadId=19%3A9bac8b44c2b64f53a94a8460360d4447%40thread.skype&ctx=channel&context=QCert&rootfolder=%252Fsites%252FTSVMTSSPIndiaTeam%252FShared%2520Documents%252FGeneral%252FTSAC%252FQCert">TSAC Release wise QPlans</a></td>
+  </tr>
+  <tr>
+    <td>TSAC reelase wise Support Enablement Deck</td>
+    <td><a href="https://teams.microsoft.com/_#/files/General?threadId=19%3A9bac8b44c2b64f53a94a8460360d4447%40thread.skype&ctx=channel&context=RTM%2520Activities&rootfolder=%252Fsites%252FTSVMTSSPIndiaTeam%252FShared%2520Documents%252FGeneral%252FTSAC%252FRTM%2520Activities">TSAC release wise Support Enablement</a></td>
+  </tr>
+  <tr>
+    <td>TSAC DevOps strategy and CI/CD process followed</td>
+    <td><a href="https://teams.microsoft.com/l/file/86F48F70-8A53-40DF-A893-C835BCB8B144?tenantId=92b796c5-5839-40a6-8dd9-c1fad320c69b&fileType=pptx&objectUrl=https%3A%2F%2Fbmcsoftware.sharepoint.com%2Fsites%2FTSVMTSSPIndiaTeam%2FShared%20Documents%2FGeneral%2FTSAC%2FTechnical%2FDevOps-TSAC.pptx&baseUrl=https%3A%2F%2Fbmcsoftware.sharepoint.com%2Fsites%2FTSVMTSSPIndiaTeam&serviceName=teams&threadId=19:9bac8b44c2b64f53a94a8460360d4447@thread.skype&groupId=23916b16-ab51-4ab6-9b4b-7de1d28f7ec2">TSAC CI/CD Process</a></td>
+  </tr>
+  <tr>
+    <td>TSAC Architechture</td>
+    <td><a href="https://teams.microsoft.com/l/file/E6064E2C-6FBF-40A8-83AD-3E66A6D9B142?tenantId=92b796c5-5839-40a6-8dd9-c1fad320c69b&fileType=pptx&objectUrl=https%3A%2F%2Fbmcsoftware.sharepoint.com%2Fsites%2FTSVMTSSPIndiaTeam%2FShared%20Documents%2FGeneral%2FTSAC%2FTechnical%2FArchitecture-TSAC.pptx&baseUrl=https%3A%2F%2Fbmcsoftware.sharepoint.com%2Fsites%2FTSVMTSSPIndiaTeam&serviceName=teams&threadId=19:9bac8b44c2b64f53a94a8460360d4447@thread.skype&groupId=23916b16-ab51-4ab6-9b4b-7de1d28f7ec2">TSAC Architechture</a></td>
+  </tr>
+</table>
+</div>
+
+<button class="accordion">JIRA</button>
+<div class="panel">
+  <p>This section lists all important links for JIRA</p>
+  <table id="t01">
+  <tr>
+    <th>Purpose</th>
+    <th>URL</th> 
+  </tr>
+  <tr>
+    <td>Get latest status of Defects</td>
+    <td><a href ="https://jira.bmc.com/secure/Dashboard.jspa?selectPageId=30801">Get latest status of Defects</a></td>
+  </tr>
+  <tr>
+    <td>Renault Scrum Team Tasks</td>
+    <td><a href="https://jira.bmc.com/secure/RapidBoard.jspa?rapidView=1357&quickFilter=8015">Renault Scrum Team Tasks</a></td>
+  </tr>
+  <tr>
+    <td>Redbull Scrum Team Tasks</td>
+    <td><a href="https://jira.bmc.com/secure/RapidBoard.jspa?rapidView=1357&quickFilter=8014">Redbull Scrum Team Tasks</a></td>
+  </tr>
+</table>
+</div>
+
+<button class="accordion">DevOps</button>
+<div class="panel">
+  <p>This section lists all important links for DevOps related process</p>
+  <table id="t01">
+  <tr>
+    <th>Purpose</th>
+    <th>URL</th> 
+  </tr>
+  <tr>
+    <td>Automation dashboard for Helix Sanity suite</td>
+    <td><a href ="http://vl-aus-blg-bl13:9080/view/HELIX%20REMEDIATE%20TRUNK/">Helix Sanity Dashboard</a></td>
+  </tr>
+  <tr>
+    <td>Automation dashboard for Helix Development suite</td>
+    <td><a href ="http://vl-aus-blg-bl13:9080/view/HELIX%20REMEDIATE%20TRUNK%20(INTERNAL)/">Helix Internal Dashboard</a></td>
+  </tr>
+  <tr>
+	<td>Automation dashboard for On-Premise Sanity suite</td>
+    <td><a href ="http://vl-aus-blg-bl13:9080/view/TSSP%20TRUNK/">On-Premise Sanity Dashboard</a></td>
+  </tr>
+  <tr>
+    <td>Automation dashboard for On-Premise Development suite</td>
+    <td><a href ="http://vl-aus-blg-bl13:9080/view/TSSP%20Trunk%20(Internal)/">Helix Internal Dashboard</a></td>
+  </tr>
+  <tr>
+    <td>All Jobs related to Helix Deployment</td>
+    <td><a href ="http://vl-aus-blg-bl13:9080/view/tsac-helix/">Helix Jobs</a></td>
+  </tr>
+</table>
+</div>
+
+<button class="accordion">Confluence Page</button>
+<div class="panel">
+  <p>All important confluence pages are listed in this section</p>
+  <table id="t01">
+  <tr>
+    <th>Purpose</th>
+    <th>URL</th> 
+  </tr>
+  <tr>
+    <td>Infrastructure created for Helix Setups</td>
+    <td><a href ="https://confluence.bmc.com/pages/viewpage.action?spaceKey=BCAS8&title=Helix+infrasturcture">Helix Infrastructure</a></td>
+  </tr>
+  <tr>
+    <td>SDD pages per microservice of TSAC</td>
+    <td><a href ="https://confluence.bmc.com/display/BCAS8/TSAC+Home#TSACHome-SoftwareDesignDocuments(SDD)">TSAC SDDs</a></td>
+  </tr>
+  <tr>
+	<td>Github repositories for all the microservices in TSAC</td>
+    <td><a href ="https://confluence.bmc.com/display/BCAS8/TSAC+Home#TSACHome-SourceCodeorGitRepositories">TSAC Git Repositories</a></td>
+  </tr>
+  <tr>
+    <td>Quality Owners</td>
+    <td><a href ="https://confluence.bmc.com/display/BCAS8/TSAC+Home#TSACHome-QualityOwners">Quality owners</a></td>
+  </tr>
+</table>
+</div>
+
+<button class="accordion">Tools</button>
+<div class="panel">
+  <p>All internal, system and Support enablement sessions can be found in this section.</p>
+  <table id="t01">
+  <tr>
+    <th>Purpose</th>
+    <th>URL</th> 
+  </tr>
+  <tr>
+    <td>Access Production like Helix setup logs - Kibana </td>
+    <td><a href ="http://10.128.99.85:32450/app/kibana#/home?_g=()">Kibana for dsmlab Rancher cluster</a></td>
+  </tr>
+</table>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>
